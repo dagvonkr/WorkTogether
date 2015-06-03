@@ -50,6 +50,7 @@ Ok, now that you have your organization setup, and you've invited your team, you
    
 - To get the changes you made to your fork to the Upstream Master submit a pull request from your fork. The organizations admin will then have to approve your pull request.
 - Everytime a new pull request is merged to the upstream master everybody on the team should update their forks. Run the following command.
+
 		git pull upstream master
 
 - That's it, you should now be able to work as a team. Good luck and may you have fewer merge conflicts.
