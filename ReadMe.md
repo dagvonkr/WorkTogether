@@ -3,7 +3,7 @@ Group Work Flow
 ###Step 1: Create An Organization
 - From your github dashboard create an Organization. Click on the + sign where you would add a repository, but select **New Organization**.
 
-###Step: 2
+###Step 2: Add Team Members
 - Once your organization has been created, it's time to include your team members. 
 
 - You can add your team members as administrators or you can create a subteam and choose what kind of access they will have. 
@@ -12,7 +12,7 @@ Group Work Flow
 
 - There are benefits and drawbacks to both ways, have your team decide what they'd like t do.
 
-###Step: 3
+###Step 3: Fork and add Upstream Master
 
 Ok, now that you have your organization setup, and you've invited your team, you need a repository to work from. 
 
@@ -34,7 +34,7 @@ Ok, now that you have your organization setup, and you've invited your team, you
 
 	Just use the clone url from the organizations repository.
 
-###Step: 4
+###Step 4: Update your Fork and the Upstream Master
 
 - Now you can pull changes from the upstream master with 
 
