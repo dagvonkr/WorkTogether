@@ -28,8 +28,11 @@ Ok, now that you have your organization setup and you've invited your team, you 
 
 6. Now we'll add an **UPSTREAM MASTER**. Type ```git remote add upstream``` and paste the organizations repo url immediatley after the command. Hit enter.
 
-Here is an example: ```remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git```
+		Here is an example: 
+	
+		remote add upstream ORIGINAL_OWNER ORIGINAL_REPO URL
 
+just use the clone url from the organizations github
 
 
 
