@@ -8,13 +8,13 @@ Group Work Flow
 
 - You can add your team members as administrators or you can create a subteam and choose what kind of access they will have. 
 
-- An administrator will be able to merge pull requests to the upstream master. If you -restrict your subteams they won't have this control.
+- An administrator will be able to merge pull requests to the upstream master. If you restrict your subteams they won't have this control.
 
 - There are benefits and drawbacks to both ways, have your team decide what they'd like t do.
 
 ###Step: 3
 
-Ok, now that you have your organization setup and you've invited your team, you need a repository to work from. 
+Ok, now that you have your organization setup, and you've invited your team, you need a repository to work from. 
 
 1. Create a new repository within your organization
 
@@ -28,13 +28,30 @@ Ok, now that you have your organization setup and you've invited your team, you 
 
 6. Now we'll add an **UPSTREAM MASTER**. Type ```git remote add upstream``` and paste the organizations repo url immediatley after the command. Hit enter.
 
-Here is an example: 
+	Here is an example: 
 	
-		remote add upstream ORIGINAL_OWNER ORIGINAL_REPO URL
+		git remote add upstream ORIGINAL_OWNER ORIGINAL_REPO URL
 
-just use the clone url from the organizations github
+	Just use the clone url from the organizations repository.
 
+###Step: 4
 
+- Now you can pull changes from the upstream master with 
 
+		git pull upstream master
+        
+- To push your changes to the upstream master do the following.
+
+		git add . or * or filename
+        git commit -m YOUR MESSAGE
+		git push origin master
+        
+   Now your fork has the changes you made on your machine.
+   
+- To get the changes you made to your fork to the Upstream Master submit a pull request from your fork. The organizations admin will then have to approve your pull request.
+- Everytime a new pull request is merged to the upstream master everybody on the team should update their forks. Run the following command.
+		git pull upstream master
+
+- That's it, you should now be able to work as a team. Good luck and may you have fewer merge conflicts.
 
 
