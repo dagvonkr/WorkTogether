@@ -6,7 +6,7 @@ Group Work Flow
 ###Step 2: Add Team Members
 - Once your organization has been created, it's time to include your team members. 
 
-- You can add your team members as administrators or you can create a subteam and choose what kind of access they will have. 
+- You can add your team members as administrators or you can create a subteam and choose what kind of access they will have. You will also have to specify which organization repositories the team will have access to. Look around the dashboard it's fairly intuitive.
 
 - An administrator will be able to merge pull requests to the upstream master. If you restrict your subteams they won't have this control.
 
@@ -40,19 +40,18 @@ Ok, now that you have your organization setup, and you've invited your team, you
 
 		git pull upstream master
         
-- To push your changes to the upstream master do the following.
+- To prepare for a pull request do the following.
+	1. Push your changes to your forks origin master.
 
-		git add . or * or filename
-        git commit -m YOUR MESSAGE
-		git push origin master
+			git add (. OR * OR filename) - if you want to know exactly what these do google it
+            git commit -m YOUR MESSAGE
+			git push origin master
         
-   Now your fork has the changes you made on your machine.
+   	Now your fork has the changes you made on your machine.
+    2. Submit a pull request from your fork. Then, whoever is administrating the repository for the organization can approve the pull request. This will update the upstream master incorporating your forks code.
    
-- To get the changes you made to your fork to the Upstream Master submit a pull request from your fork. The organizations admin will then have to approve your pull request.
 - Everytime a new pull request is merged to the upstream master everybody on the team should update their forks. Run the following command.
 
 		git pull upstream master
 
 - That's it, you should now be able to work as a team. Good luck and may you have fewer merge conflicts.
-
-
