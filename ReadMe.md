@@ -41,13 +41,13 @@ Ok, now that you have your organization setup, and you've invited your team, you
 		git pull upstream master
         
 - To prepare for a pull request do the following.
-	1. Push your changes to your forks origin master.
+	1. Push your changes to your fork's origin master.
 
-			git add (. OR * OR filename) - if you want to know exactly what these do google it
-            git commit -m YOUR MESSAGE
-			git push origin master
+				git add (. OR * OR filename) - if you want to know exactly what these do google it
+				git commit -m YOUR MESSAGE
+				git push origin master
         
-   	Now your fork has the changes you made on your machine.
+      Now your fork has the changes you made on your machine.
     2. Submit a pull request from your fork. Then, whoever is administrating the repository for the organization can approve the pull request. This will update the upstream master incorporating your forks code.
    
 - Everytime a new pull request is merged to the upstream master everybody on the team should update their forks. Run the following command.
